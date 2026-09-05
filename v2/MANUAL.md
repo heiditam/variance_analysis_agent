@@ -97,12 +97,18 @@ date_time, type, category, account, amount, currency, tags
 ```
 
 `type` must be `expense` or `income`. A ready-made demo file is at
-`data/sample_transactions.csv`.
+`data/sample_transactions.csv`. **If you don't pass `--data`**, the agent
+searches your Desktop (`~/Desktop`, including subfolders) for a file named
+`sample_transactions.csv` and uses that automatically -- so the simplest
+setup is to drop your CSV on the Desktop under that exact name.
 
 ### 3. Run it
 
 ```bash
-# Demo data, expenses only, most recent two months
+# No --data at all -- auto-finds sample_transactions.csv on your Desktop
+python agent.py --dataset expenses
+
+# Explicit path instead (demo data bundled in the repo)
 python agent.py --data data/sample_transactions.csv --dataset expenses
 
 # Your own file, both datasets, specific periods, with a steering note
@@ -112,7 +118,7 @@ python agent.py --data ~/Desktop/transactions.csv --dataset both \
 
 | Flag | Meaning | Default |
 |---|---|---|
-| `--data` | Path to the transactions CSV | *(required)* |
+| `--data` | Path to the transactions CSV | searches `~/Desktop` for `sample_transactions.csv` |
 | `--dataset` | `expenses`, `income`, or `both` | `both` |
 | `--period-a` / `--period-b` | Periods to compare (`YYYY-MM`) | the two most recent in the file |
 | trailing text | Optional note to steer explanation tone | *(none)* |

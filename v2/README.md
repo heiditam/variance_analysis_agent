@@ -28,7 +28,9 @@ date_time, type, category, account, amount, currency, tags
 ```
 
 `type` must be `"expense"` or `"income"`. The file can live anywhere on disk --
-pass its path with `--data`. A bundled demo file is at
+pass its path with `--data`, or **omit `--data` entirely** and the agent will
+search your Desktop (`~/Desktop`, including subfolders) for a file named
+`sample_transactions.csv` and use that. A bundled demo file is at
 `data/sample_transactions.csv` (built by merging the original
 `Expenses_clean.csv` / `Income_clean.csv` and adding a `type` column; see
 `scripts/refresh_kaggle_data.py` to regenerate it from the source Kaggle
@@ -37,11 +39,13 @@ dataset, which is optional and not used at runtime).
 ## Run
 
 ```
+python agent.py --dataset expenses                 # auto-finds sample_transactions.csv on your Desktop
 python agent.py --data data/sample_transactions.csv --dataset expenses
 python agent.py --data ~/Desktop/transactions.csv --dataset both \
     --period-a 2025-10 --period-b 2025-11 "focus on seasonal categories"
 ```
 
+- `--data` is optional; if omitted, it searches `~/Desktop` for `sample_transactions.csv`.
 - `--dataset` is `expenses`, `income`, or `both` (default `both`).
 - `--period-a`/`--period-b` default to the two most recent periods found in the file.
 - The trailing free-text note is optional and only nudges narrative tone/emphasis

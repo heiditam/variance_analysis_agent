@@ -13,9 +13,12 @@ Requires:
     export ANTHROPIC_API_KEY=...   (or `ant auth login`)
 
 Usage (run from inside this v2/ directory):
-    python agent.py --data data/sample_transactions.csv --dataset expenses
+    python agent.py --dataset expenses
     python agent.py --data ~/Desktop/transactions.csv --dataset both \\
         --period-a 2025-10 --period-b 2025-11 "focus on seasonal categories"
+
+If --data is omitted, the agent looks for a file named `sample_transactions.csv`
+on your Desktop (~/Desktop) instead -- searching it and its subfolders.
 """
 
 import argparse
@@ -41,6 +44,29 @@ MODEL = "claude-opus-5"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DERIVED_DIR = os.path.join(BASE_DIR, "data", "derived")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+
+DEFAULT_DATA_FILENAME = "sample_transactions.csv"
+DESKTOP_DIR = os.path.expanduser("~/Desktop")
+
+
+def find_default_data_file(filename: str = DEFAULT_DATA_FILENAME, search_dir: str = DESKTOP_DIR) -> str:
+    """Locate `filename` on the Desktop when --data isn't given: check
+    <search_dir>/<filename> directly first, then fall back to a recursive
+    search of <search_dir> in case it's tucked in a subfolder. Raises
+    FileNotFoundError with a clear message if nothing is found."""
+    direct_path = os.path.join(search_dir, filename)
+    if os.path.isfile(direct_path):
+        return direct_path
+
+    if os.path.isdir(search_dir):
+        for root, _dirs, files in os.walk(search_dir):
+            if filename in files:
+                return os.path.join(root, filename)
+
+    raise FileNotFoundError(
+        f"Could not find '{filename}' on your Desktop ({search_dir}) or in any of its "
+        f"subfolders. Either place the file there, or pass its location explicitly with --data."
+    )
 
 SYSTEM_PROMPT_TEMPLATE = """You are a financial analyst agent. You have been asked to explain \
 why the '{account}' account in the '{dataset}' dataset changed between {period_a} and {period_b}. \
@@ -150,7 +176,11 @@ def _build_drilldown(df, dataset: str, account: str, period_a: str, period_b: st
     }
 
 
-def run(csv_path: str, dataset_arg: str, period_a: Optional[str], period_b: Optional[str], note: str) -> None:
+def run(csv_path: Optional[str], dataset_arg: str, period_a: Optional[str], period_b: Optional[str], note: str) -> None:
+    if csv_path is None:
+        csv_path = find_default_data_file()
+        print(f"--data not given -- using '{csv_path}' found on your Desktop.")
+
     df = load_transactions(csv_path)
     summary = derive_monthly_account_summary(df)
     materialize_summary(summary, out_dir=DERIVED_DIR)
@@ -219,7 +249,11 @@ def run(csv_path: str, dataset_arg: str, period_a: Optional[str], period_b: Opti
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Financial variance analysis agent.")
-    parser.add_argument("--data", required=True, help="Path to the combined transactions CSV.")
+    parser.add_argument(
+        "--data", default=None,
+        help="Path to the combined transactions CSV. If omitted, searches your "
+             f"Desktop (~/Desktop) for a file named '{DEFAULT_DATA_FILENAME}'.",
+    )
     parser.add_argument("--dataset", choices=["expenses", "income", "both"], default="both")
     parser.add_argument("--period-a", dest="period_a", default=None, help="Baseline period, YYYY-MM.")
     parser.add_argument("--period-b", dest="period_b", default=None, help="Comparison period, YYYY-MM.")
