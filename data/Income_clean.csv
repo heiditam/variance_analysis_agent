@@ -1,0 +1,350 @@
+date_time,category,account,amount,currency,tags
+2025-11-29 00:00:00,Job,acct_1,49.0,BYN,tag_1
+2025-11-29 00:00:00,Job,acct_1,18.0,BYN,tag_2
+2025-11-29 00:00:00,Job,acct_1,32.0,BYN,tag_3
+2025-11-29 00:00:00,Job,acct_1,109.0,BYN,tag_4
+2025-11-28 00:00:00,Second work,acct_1,132.0,BYN,2th_work
+2025-11-25 00:00:00,Debt return / Borrowed money,acct_1,49.0,BYN,tag_5
+2025-11-25 00:00:00,Job,acct_1,18.0,BYN,tag_1
+2025-11-22 00:00:00,Job,acct_1,44.0,BYN,tag_1
+2025-11-22 00:00:00,Job,acct_1,10.0,BYN,tag_2
+2025-11-22 00:00:00,Job,acct_1,11.0,BYN,tag_3
+2025-11-20 00:00:00,Job,acct_1,133.0,BYN,tag_4
+2025-11-18 00:00:00,Job,acct_1,17.0,BYN,tag_1
+2025-11-15 00:00:00,Job,acct_1,49.0,BYN,tag_2
+2025-11-15 00:00:00,Job,acct_1,19.0,BYN,tag_1
+2025-11-15 00:00:00,Job,acct_1,31.0,BYN,tag_3
+2025-11-15 00:00:00,Debt return / Borrowed money,acct_2,17.0,BYN,tag_5
+2025-11-13 00:00:00,Job,acct_1,31.0,BYN,tag_4
+2025-11-11 00:00:00,Job,acct_1,17.0,BYN,tag_1
+2025-11-11 00:00:00,Job,acct_1,76.0,BYN,tag_4
+2025-11-09 00:00:00,Second work,acct_1,133.0,BYN,2th_work
+2025-11-08 00:00:00,Job,acct_1,49.0,BYN,tag_2
+2025-11-08 00:00:00,Job,acct_1,10.0,BYN,tag_1
+2025-11-08 00:00:00,Job,acct_1,38.0,BYN,tag_3
+2025-11-07 00:00:00,Gift,acct_1,178.0,BYN,tag_5
+2025-11-07 00:00:00,Gift,acct_1,16.0,BYN,tag_5
+2025-11-04 00:00:00,Gift,acct_2,3.0,BYN,tag_5
+2025-11-01 00:00:00,Job,acct_1,28.0,BYN,tag_3
+2025-10-28 00:00:00,Gift,acct_1,176.0,BYN,tag_5
+2025-10-28 00:00:00,Job,acct_1,23.0,BYN,tag_2
+2025-10-28 00:00:00,Job,acct_1,75.0,BYN,tag_1
+2025-10-26 00:00:00,Job,acct_1,42.0,BYN,tag_2
+2025-10-26 00:00:00,Job,acct_1,12.0,BYN,tag_1
+2025-10-25 00:00:00,Second work,acct_1,371.0,BYN,2th_work
+2025-10-25 00:00:00,Job,acct_1,29.0,BYN,tag_3
+2025-10-21 00:00:00,Job,acct_1,33.0,BYN,tag_1
+2025-10-20 00:00:00,Debt return / Borrowed money,acct_1,1345.0,BYN,tag_5
+2025-10-20 00:00:00,Job,acct_1,67.0,BYN,tag_4
+2025-10-20 00:00:00,Gift,acct_3,13.0,BYN,tag_5
+2025-10-18 00:00:00,Job,acct_1,27.0,BYN,tag_2
+2025-10-18 00:00:00,Job,acct_1,14.0,BYN,tag_1
+2025-10-18 00:00:00,Job,acct_1,10.0,BYN,tag_3
+2025-10-17 00:00:00,Gift,acct_1,197.0,BYN,tag_5
+2025-10-15 00:00:00,Job,acct_1,22.0,BYN,tag_4
+2025-10-15 00:00:00,Second work,acct_1,178.0,BYN,2th_work
+2025-10-14 00:00:00,Job,acct_1,13.0,BYN,tag_1
+2025-10-12 00:00:00,Job,acct_1,16.0,BYN,tag_3
+2025-10-11 00:00:00,Job,acct_1,39.0,BYN,tag_1
+2025-10-11 00:00:00,Job,acct_1,9.0,BYN,tag_2
+2025-10-11 00:00:00,Gift,acct_1,11.0,BYN,tag_5
+2025-10-10 00:00:00,Job,acct_1,22.0,BYN,tag_4
+2025-10-10 00:00:00,Job,acct_1,98.0,BYN,tag_6
+2025-10-07 00:00:00,Job,acct_1,11.0,BYN,tag_1
+2025-10-05 00:00:00,Debt return / Borrowed money,acct_1,25.0,BYN,tag_5
+2025-10-04 00:00:00,Job,acct_1,25.0,BYN,tag_1
+2025-10-04 00:00:00,Job,acct_1,38.0,BYN,tag_2
+2025-10-04 00:00:00,Job,acct_1,45.0,BYN,tag_3
+2025-10-04 00:00:00,Gift,acct_2,7.0,BYN,tag_5
+2025-09-30 00:00:00,Job,acct_1,31.0,BYN,tag_1
+2025-09-28 00:00:00,Job,acct_1,93.0,BYN,tag_7
+2025-09-28 00:00:00,Second work,acct_2,71.0,BYN,2th_work
+2025-09-28 00:00:00,Second work,acct_1,117.0,BYN,2th_work
+2025-09-27 00:00:00,Gift,acct_1,1140.0,BYN,tag_5
+2025-09-27 00:00:00,Job,acct_1,49.0,BYN,tag_2
+2025-09-27 00:00:00,Job,acct_1,36.0,BYN,tag_1
+2025-09-27 00:00:00,Job,acct_1,20.0,BYN,tag_3
+2025-09-27 00:00:00,Cashback,acct_1,7.0,BYN,tag_5
+2025-09-27 00:00:00,Gift,acct_2,58.0,BYN,tag_5
+2025-09-25 00:00:00,Gift,acct_1,79.0,BYN,tag_5
+2025-09-25 00:00:00,Gift,acct_1,678.0,BYN,tag_5
+2025-09-24 00:00:00,Job,acct_1,60.0,BYN,tag_4
+2025-09-24 00:00:00,Job,acct_1,53.0,BYN,tag_6
+2025-09-23 00:00:00,Job,acct_1,17.0,BYN,tag_1
+2025-09-23 00:00:00,Gift,acct_1,1506.0,BYN,tag_5
+2025-09-21 00:00:00,Second work,acct_2,34.0,BYN,tag_5
+2025-09-21 00:00:00,Job,acct_1,77.0,BYN,tag_4
+2025-09-20 00:00:00,Second work,acct_1,88.0,BYN,2th_work
+2025-09-20 00:00:00,Job,acct_1,50.0,BYN,tag_2
+2025-09-20 00:00:00,Job,acct_1,16.0,BYN,tag_1
+2025-09-17 00:00:00,Job,acct_1,28.0,BYN,tag_1
+2025-09-15 00:00:00,Second work,acct_2,279.0,BYN,2th_work
+2025-09-14 00:00:00,Second work,acct_1,15.0,BYN,tag_5
+2025-09-14 00:00:00,Job,acct_1,76.0,BYN,tag_7
+2025-09-13 00:00:00,Job,acct_1,39.0,BYN,tag_1
+2025-09-13 00:00:00,Job,acct_1,39.0,BYN,tag_2
+2025-09-13 00:00:00,Job,acct_1,46.0,BYN,tag_3
+2025-09-12 00:00:00,Second work,acct_1,83.0,BYN,tag_5
+2025-09-11 00:00:00,Second work,acct_1,8.0,BYN,tag_5
+2025-09-11 00:00:00,Debt return / Borrowed money,acct_1,223.0,BYN,tag_5
+2025-09-11 00:00:00,Gift,acct_3,28.0,BYN,tag_5
+2025-09-09 00:00:00,Second work,acct_1,85.0,BYN,2th_work
+2025-09-09 00:00:00,Job,acct_1,13.0,BYN,tag_1
+2025-09-07 00:00:00,Job,acct_1,64.0,BYN,tag_6
+2025-09-06 00:00:00,Job,acct_1,34.0,BYN,tag_2
+2025-09-06 00:00:00,Job,acct_1,28.0,BYN,tag_1
+2025-09-06 00:00:00,Job,acct_1,49.0,BYN,tag_3
+2025-09-04 00:00:00,Second work,acct_1,47.0,BYN,tag_5
+2025-09-03 00:00:00,Job,acct_1,20.0,BYN,tag_1
+2025-09-01 00:00:00,Second work,acct_1,246.0,BYN,2th_work
+2025-08-30 00:00:00,Second work,acct_1,102.0,BYN,2th_work
+2025-08-30 00:00:00,Gift,acct_1,10.0,BYN,tag_5
+2025-08-29 00:00:00,Job,acct_2,22.0,BYN,tag_8
+2025-08-28 00:00:00,Second work,acct_2,52.0,BYN,tag_5
+2025-08-28 00:00:00,Second work,acct_1,250.0,BYN,2th_work
+2025-08-27 00:00:00,Job,acct_2,50.0,BYN,tag_8
+2025-08-26 00:00:00,Job,acct_1,31.0,BYN,tag_2
+2025-08-26 00:00:00,Job,acct_1,18.0,BYN,tag_1
+2025-08-25 00:00:00,Job,acct_1,38.0,BYN,tag_8
+2025-08-25 00:00:00,Job,acct_1,29.0,BYN,tag_3
+2025-08-22 00:00:00,Second work,acct_1,167.0,BYN,2th_work
+2025-08-22 00:00:00,Job,acct_1,43.0,BYN,tag_1
+2025-08-22 00:00:00,Job,acct_1,11.0,BYN,tag_2
+2025-08-22 00:00:00,Job,acct_2,43.0,BYN,tag_8
+2025-08-21 00:00:00,Gift,acct_1,7.0,BYN,tag_5
+2025-08-20 00:00:00,Job,acct_2,27.0,BYN,tag_8
+2025-08-20 00:00:00,Job,acct_1,28.0,BYN,tag_1
+2025-08-18 00:00:00,Job,acct_1,53.0,BYN,tag_3
+2025-08-18 00:00:00,Deposit interest,acct_4,58.0,BYN,tag_5
+2025-08-16 00:00:00,Second work,acct_1,308.0,BYN,2th_work
+2025-08-15 00:00:00,Job,acct_1,19.0,BYN,tag_8
+2025-08-15 00:00:00,Job,acct_1,50.0,BYN,tag_1
+2025-08-15 00:00:00,Job,acct_1,18.0,BYN,tag_2
+2025-08-14 00:00:00,Second work,acct_1,65.0,BYN,2th_work
+2025-08-14 00:00:00,Second work,acct_1,224.0,BYN,2th_work
+2025-08-13 00:00:00,Job,acct_1,29.0,BYN,tag_8
+2025-08-12 00:00:00,Job,acct_1,42.0,BYN,tag_1
+2025-08-11 00:00:00,Job,acct_1,18.0,BYN,tag_8
+2025-08-10 00:00:00,Debt return / Borrowed money,acct_1,50.0,BYN,tag_5
+2025-08-08 00:00:00,Job,acct_1,26.0,BYN,tag_2
+2025-08-08 00:00:00,Job,acct_1,43.0,BYN,tag_1
+2025-08-05 00:00:00,Job,acct_1,15.0,BYN,tag_1
+2025-08-04 00:00:00,Job,acct_1,36.0,BYN,tag_8
+2025-08-04 00:00:00,Job,acct_1,13.0,BYN,tag_3
+2025-08-03 00:00:00,Second work,acct_1,117.0,BYN,2th_work
+2025-08-02 00:00:00,Second work,acct_1,161.0,BYN,2th_work
+2025-08-01 00:00:00,Job,acct_1,37.0,BYN,tag_2
+2025-08-01 00:00:00,Job,acct_1,49.0,BYN,tag_8
+2025-07-30 00:00:00,Job,acct_1,49.0,BYN,tag_8
+2025-07-29 00:00:00,Cashback,acct_2,59.0,BYN,tag_5
+2025-07-27 00:00:00,Second work,acct_1,73.0,BYN,2th_work
+2025-07-22 00:00:00,Job,acct_1,28.0,BYN,tag_1
+2025-07-21 00:00:00,Gift,acct_1,22.0,BYN,tag_5
+2025-07-21 00:00:00,Job,acct_1,24.0,BYN,tag_8
+2025-07-20 00:00:00,Second work,acct_1,219.0,BYN,2th_work
+2025-07-19 00:00:00,Second work,acct_1,76.0,BYN,2th_work
+2025-07-18 00:00:00,Job,acct_1,22.0,BYN,tag_1
+2025-07-18 00:00:00,Job,acct_1,17.0,BYN,tag_2
+2025-07-16 00:00:00,Job,acct_1,30.0,BYN,tag_1
+2025-07-16 00:00:00,Second work,acct_1,55.0,BYN,2th_work
+2025-07-15 00:00:00,Job,acct_1,49.0,BYN,tag_8
+2025-07-11 00:00:00,Job,acct_1,28.0,BYN,tag_2
+2025-07-10 00:00:00,Second work,acct_1,108.0,BYN,2th_work
+2025-07-09 00:00:00,Job,acct_2,43.0,BYN,tag_8
+2025-07-07 00:00:00,Job,acct_2,36.0,BYN,tag_8
+2025-07-07 00:00:00,Debt return / Borrowed money,acct_2,8.0,BYN,tag_5
+2025-07-06 00:00:00,Second work,acct_1,6.0,BYN,tag_5
+2025-07-06 00:00:00,Second work,acct_1,322.0,BYN,2th_work
+2025-07-04 00:00:00,Job,acct_1,47.0,BYN,tag_8
+2025-07-04 00:00:00,Gift,acct_1,21.0,BYN,tag_5
+2025-07-02 00:00:00,Job,acct_1,28.0,BYN,tag_8
+2025-07-02 00:00:00,Job,acct_1,30.0,BYN,tag_2
+2025-07-02 00:00:00,Job,acct_1,25.0,BYN,tag_1
+2025-07-01 00:00:00,Second work,acct_1,276.0,BYN,2th_work
+2025-07-01 00:00:00,Second work,acct_1,266.0,BYN,2th_work
+2025-06-30 00:00:00,Job,acct_1,41.0,BYN,tag_8
+2025-06-30 00:00:00,Job,acct_1,31.0,BYN,tag_1
+2025-06-30 00:00:00,Job,acct_1,44.0,BYN,tag_8
+2025-06-27 00:00:00,Job,acct_1,43.0,BYN,tag_8
+2025-06-27 00:00:00,Job,acct_1,33.0,BYN,tag_2
+2025-06-27 00:00:00,Job,acct_1,21.0,BYN,tag_1
+2025-06-26 00:00:00,Second work,acct_1,137.0,BYN,2th_work
+2025-06-25 00:00:00,Job,acct_1,13.0,BYN,tag_8
+2025-06-25 00:00:00,Job,acct_1,25.0,BYN,tag_1
+2025-06-23 00:00:00,Job,acct_1,35.0,BYN,tag_3
+2025-06-22 00:00:00,Gift,acct_1,8.0,BYN,tag_5
+2025-06-20 00:00:00,Job,acct_1,33.0,BYN,tag_8
+2025-06-20 00:00:00,Job,acct_1,12.0,BYN,tag_2
+2025-06-20 00:00:00,Job,acct_1,14.0,BYN,tag_1
+2025-06-19 00:00:00,Debt return / Borrowed money,acct_1,32.0,BYN,tag_5
+2025-06-19 00:00:00,Job,acct_1,19.0,BYN,tag_6
+2025-06-18 00:00:00,Job,acct_1,45.0,BYN,tag_8
+2025-06-17 00:00:00,Second work,acct_1,277.0,BYN,2th_work
+2025-06-17 00:00:00,Job,acct_1,27.0,BYN,tag_6
+2025-06-17 00:00:00,Job,acct_1,16.0,BYN,tag_1
+2025-06-16 00:00:00,Job,acct_1,39.0,BYN,tag_3
+2025-06-15 00:00:00,Second work,acct_1,148.0,BYN,2th_work
+2025-06-13 00:00:00,Job,acct_1,25.0,BYN,tag_8
+2025-06-13 00:00:00,Job,acct_1,17.0,BYN,tag_2
+2025-06-13 00:00:00,Job,acct_1,39.0,BYN,tag_1
+2025-06-12 00:00:00,Second work,acct_1,135.0,BYN,2th_work
+2025-06-12 00:00:00,Job,acct_1,38.0,BYN,tag_6
+2025-06-11 00:00:00,Job,acct_1,50.0,BYN,tag_8
+2025-06-10 00:00:00,Job,acct_1,49.0,BYN,tag_6
+2025-06-10 00:00:00,Job,acct_1,12.0,BYN,tag_1
+2025-06-09 00:00:00,Second work,acct_1,57.0,BYN,2th_work
+2025-06-09 00:00:00,Second work,acct_1,60.0,BYN,2th_work
+2025-06-09 00:00:00,Job,acct_1,20.0,BYN,tag_3
+2025-06-07 00:00:00,Second work,acct_1,274.0,BYN,2th_work
+2025-06-06 00:00:00,Job,acct_1,24.0,BYN,tag_2
+2025-06-06 00:00:00,Job,acct_1,49.0,BYN,tag_1
+2025-06-05 00:00:00,Job,acct_1,55.0,BYN,tag_6
+2025-06-03 00:00:00,Job,acct_1,31.0,BYN,tag_1
+2025-06-02 00:00:00,Job,acct_1,49.0,BYN,tag_6
+2025-06-02 00:00:00,Job,acct_1,48.0,BYN,tag_3
+2025-06-02 00:00:00,Gift,acct_1,102.0,BYN,tag_5
+2025-05-31 00:00:00,Job,acct_1,272.0,BYN,2th_work
+2025-05-26 00:00:00,Job,acct_1,17.0,BYN,tag_5
+2025-05-26 00:00:00,Job,acct_1,59.0,BYN,tag_5
+2025-05-25 00:00:00,Gift,acct_2,17.0,BYN,tag_5
+2025-05-23 00:00:00,Job,acct_2,56.0,BYN,tag_5
+2025-05-22 00:00:00,Second work,acct_1,102.0,BYN,2th_work
+2025-05-21 00:00:00,Job,acct_1,20.0,BYN,tag_5
+2025-05-20 00:00:00,Job,acct_1,10.0,BYN,tag_5
+2025-05-19 00:00:00,Job,acct_1,15.0,BYN,tag_5
+2025-05-16 00:00:00,Job,acct_1,83.0,BYN,tag_5
+2025-05-16 00:00:00,Cashback,acct_1,24.0,BYN,tag_5
+2025-05-15 00:00:00,Second work,acct_1,193.0,BYN,2th_work
+2025-05-14 00:00:00,Cashback,acct_1,16.0,BYN,tag_5
+2025-05-13 00:00:00,Job,acct_1,8.0,BYN,tag_5
+2025-05-09 00:00:00,Other,acct_1,908.0,BYN,tag_5
+2025-05-08 00:00:00,Job,acct_1,47.0,BYN,tag_5
+2025-05-07 00:00:00,Job,acct_1,22.0,BYN,tag_5
+2025-05-06 00:00:00,Cashback,acct_1,2.0,BYN,tag_5
+2025-05-06 00:00:00,Job,acct_1,17.0,BYN,tag_5
+2025-05-06 00:00:00,Job,acct_1,24.0,BYN,tag_5
+2025-05-03 00:00:00,Gift,acct_2,78.0,BYN,tag_5
+2025-05-02 00:00:00,Cashback,acct_3,5.0,BYN,tag_5
+2025-05-01 00:00:00,Job,acct_1,15.0,BYN,tag_5
+2025-04-30 00:00:00,Job,acct_1,42.0,BYN,tag_5
+2025-04-26 00:00:00,Second work,acct_1,43.0,BYN,2th_work
+2025-04-25 00:00:00,Job,acct_1,20.0,BYN,tag_5
+2025-04-25 00:00:00,Second work,acct_1,115.0,BYN,2th_work
+2025-04-23 00:00:00,Job,acct_1,79.0,BYN,tag_5
+2025-04-22 00:00:00,Job,acct_1,22.0,BYN,tag_5
+2025-04-21 00:00:00,Job,acct_1,24.0,BYN,tag_5
+2025-04-18 00:00:00,Job,acct_1,67.0,BYN,tag_5
+2025-04-16 00:00:00,Second work,acct_1,182.0,BYN,2th_work
+2025-04-16 00:00:00,Job,acct_1,19.0,BYN,tag_5
+2025-04-15 00:00:00,Job,acct_1,13.0,BYN,tag_5
+2025-04-14 00:00:00,Job,acct_1,39.0,BYN,tag_5
+2025-04-14 00:00:00,Job,acct_1,13.0,BYN,tag_5
+2025-04-09 00:00:00,Job,acct_1,16.0,BYN,tag_5
+2025-04-08 00:00:00,Gift,acct_2,6.0,BYN,tag_5
+2025-04-08 00:00:00,Second work,acct_1,59.0,BYN,tag_5
+2025-04-08 00:00:00,Job,acct_1,19.0,BYN,tag_5
+2025-04-08 00:00:00,Second work,acct_1,178.0,BYN,2th_work
+2025-04-07 00:00:00,Job,acct_1,97.0,BYN,tag_5
+2025-04-07 00:00:00,Job,acct_1,14.0,BYN,tag_5
+2025-04-04 00:00:00,Debt return / Borrowed money,acct_1,243.0,BYN,tag_5
+2025-04-02 00:00:00,Second work,acct_1,81.0,BYN,2th_work
+2025-04-02 00:00:00,Job,acct_1,20.0,BYN,tag_5
+2025-04-01 00:00:00,Job,acct_1,12.0,BYN,tag_5
+2025-03-31 00:00:00,Job,acct_1,86.0,BYN,tag_5
+2025-03-31 00:00:00,Job,acct_1,81.0,BYN,tag_5
+2025-03-31 00:00:00,Other,acct_1,4.0,BYN,tag_5
+2025-03-28 00:00:00,Job,acct_1,24.0,BYN,tag_5
+2025-03-28 00:00:00,Job,acct_1,18.0,BYN,tag_5
+2025-03-28 00:00:00,Gift,acct_1,6.0,BYN,tag_5
+2025-03-28 00:00:00,Other,acct_1,28.0,BYN,tag_5
+2025-03-26 00:00:00,Gift,acct_1,20.0,BYN,tag_5
+2025-03-24 00:00:00,Second work,acct_1,460.0,BYN,2th_work
+2025-03-23 00:00:00,Second work,acct_1,72.0,BYN,2th_work
+2025-03-23 00:00:00,Second work,acct_1,320.0,BYN,2th_work
+2025-03-21 00:00:00,Debt return / Borrowed money,acct_1,460.0,BYN,tag_5
+2025-03-21 00:00:00,Debt return / Borrowed money,acct_3,3.0,BYN,tag_5
+2025-03-19 00:00:00,Gift,acct_1,3.0,BYN,tag_5
+2025-03-18 00:00:00,Job,acct_1,13.0,BYN,tag_5
+2025-03-18 00:00:00,Other,acct_1,25.0,BYN,tag_5
+2025-03-17 00:00:00,Job,acct_1,73.0,BYN,tag_5
+2025-03-16 00:00:00,Cashback,acct_2,7.0,BYN,tag_5
+2025-03-15 00:00:00,Other,acct_1,14.0,BYN,tag_5
+2025-03-14 00:00:00,Other,acct_1,53.0,BYN,tag_5
+2025-03-13 00:00:00,Job,acct_1,41.0,BYN,tag_5
+2025-03-11 00:00:00,Job,acct_1,28.0,BYN,tag_5
+2025-03-10 00:00:00,Job,acct_1,164.0,BYN,tag_5
+2025-03-10 00:00:00,Job,acct_1,44.0,BYN,tag_5
+2025-03-09 00:00:00,Other,acct_2,146.0,BYN,tag_5
+2025-03-07 00:00:00,Job,acct_1,45.0,BYN,tag_5
+2025-03-06 00:00:00,Job,acct_1,40.0,BYN,tag_5
+2025-03-05 00:00:00,Debt return / Borrowed money,acct_1,304.0,BYN,tag_5
+2025-03-05 00:00:00,Job,acct_1,32.0,BYN,tag_5
+2025-03-04 00:00:00,Job,acct_1,24.0,BYN,tag_5
+2025-03-03 00:00:00,Other,acct_1,417.0,BYN,tag_5
+2025-03-03 00:00:00,Job,acct_1,37.0,BYN,tag_5
+2025-02-28 00:00:00,Second work,acct_1,230.0,BYN,2th_work
+2025-02-28 00:00:00,Job,acct_1,28.0,BYN,tag_5
+2025-02-27 00:00:00,Job,acct_1,40.0,BYN,tag_5
+2025-02-25 00:00:00,Job,acct_1,16.0,BYN,tag_5
+2025-02-25 00:00:00,Gift,acct_3,13.0,BYN,tag_5
+2025-02-24 00:00:00,Other,acct_1,53.0,BYN,tag_5
+2025-02-24 00:00:00,Job,acct_1,55.0,BYN,tag_5
+2025-02-24 00:00:00,Job,acct_1,35.0,BYN,tag_5
+2025-02-21 00:00:00,Second work,acct_1,272.0,BYN,2th_work
+2025-02-21 00:00:00,Job,acct_1,42.0,BYN,tag_5
+2025-02-21 00:00:00,Gift,acct_1,69.0,BYN,tag_5
+2025-02-20 00:00:00,Job,acct_1,40.0,BYN,tag_5
+2025-02-19 00:00:00,Job,acct_1,51.0,BYN,tag_5
+2025-02-17 00:00:00,Job,acct_1,28.0,BYN,tag_5
+2025-02-17 00:00:00,Job,acct_1,23.0,BYN,tag_5
+2025-02-14 00:00:00,Job,acct_1,50.0,BYN,tag_5
+2025-02-14 00:00:00,Other,acct_3,2.0,BYN,tag_5
+2025-02-13 00:00:00,Job,acct_1,17.0,BYN,tag_5
+2025-02-12 00:00:00,Job,acct_1,30.0,BYN,tag_5
+2025-02-11 00:00:00,Job,acct_1,12.0,BYN,tag_5
+2025-02-10 00:00:00,Job,acct_1,38.0,BYN,tag_5
+2025-02-07 00:00:00,Job,acct_1,53.0,BYN,tag_5
+2025-02-07 00:00:00,Other,acct_1,5.0,BYN,tag_5
+2025-02-06 00:00:00,Other,acct_1,106.0,BYN,tag_5
+2025-02-06 00:00:00,Job,acct_1,36.0,BYN,tag_5
+2025-02-05 00:00:00,Other,acct_1,73.0,BYN,tag_5
+2025-02-05 00:00:00,Job,acct_1,28.0,BYN,tag_5
+2025-02-04 00:00:00,Job,acct_1,35.0,BYN,tag_5
+2025-02-04 00:00:00,Job,acct_1,33.0,BYN,tag_5
+2025-02-03 00:00:00,Job,acct_1,11.0,BYN,tag_5
+2025-02-03 00:00:00,Job,acct_1,32.0,BYN,tag_5
+2025-02-02 00:00:00,Gift,acct_1,35.0,BYN,tag_5
+2025-02-01 00:00:00,Other,acct_1,56.0,BYN,tag_5
+2025-01-31 00:00:00,Job,acct_1,28.0,BYN,tag_5
+2025-01-30 00:00:00,Other,acct_1,72.0,BYN,tag_5
+2025-01-30 00:00:00,Second work,acct_1,208.0,BYN,2th_work
+2025-01-28 00:00:00,Job,acct_5,31.0,BYN,tag_5
+2025-01-27 00:00:00,Job,acct_5,43.0,BYN,tag_5
+2025-01-27 00:00:00,Job,acct_5,31.0,BYN,tag_5
+2025-01-25 00:00:00,Other,acct_1,172.0,BYN,tag_5
+2025-01-24 00:00:00,Cashback,acct_1,2.0,BYN,tag_5
+2025-01-24 00:00:00,Job,acct_5,22.0,BYN,tag_5
+2025-01-24 00:00:00,Other,acct_1,145.0,BYN,tag_5
+2025-01-23 00:00:00,Job,acct_5,44.0,BYN,tag_5
+2025-01-21 00:00:00,Job,acct_1,15.0,BYN,tag_5
+2025-01-20 00:00:00,Job,acct_1,39.0,BYN,tag_5
+2025-01-20 00:00:00,Job,acct_1,36.0,BYN,tag_5
+2025-01-18 00:00:00,Other,acct_1,30.0,BYN,tag_5
+2025-01-17 00:00:00,Job,acct_1,51.0,BYN,tag_5
+2025-01-16 00:00:00,Job,acct_1,32.0,BYN,tag_5
+2025-01-15 00:00:00,Second work,acct_1,89.0,BYN,2th_work
+2025-01-15 00:00:00,Job,acct_1,14.0,BYN,tag_5
+2025-01-15 00:00:00,Job,acct_1,36.0,BYN,tag_5
+2025-01-13 00:00:00,Job,acct_1,34.0,BYN,tag_5
+2025-01-11 00:00:00,Other,acct_1,68.0,BYN,tag_5
+2025-01-11 00:00:00,Cashback,acct_1,4.0,BYN,tag_5
+2025-01-10 00:00:00,Cashback,acct_2,41.0,BYN,tag_5
+2025-01-10 00:00:00,Other,acct_2,27.0,BYN,tag_5
+2025-01-10 00:00:00,Other,acct_1,74.0,BYN,tag_5
+2025-01-09 00:00:00,Other,acct_2,213.0,BYN,tag_5
+2025-01-09 00:00:00,Job,acct_1,16.0,BYN,tag_5
+2025-01-07 00:00:00,Cashback,acct_1,7.0,BYN,tag_5
+2025-01-05 00:00:00,Second work,acct_1,78.0,BYN,2th_work
+2025-01-04 00:00:00,Gift,acct_1,51.0,BYN,tag_5
+2025-01-04 00:00:00,Gift,acct_1,77.0,BYN,tag_5
+2025-01-03 00:00:00,Job,acct_1,34.0,BYN,tag_5
