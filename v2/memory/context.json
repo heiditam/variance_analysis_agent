@@ -1,5 +1,67 @@
 {
   "schema_version": 1,
-  "runs": [],
-  "notes": []
+  "runs": [
+    {
+      "timestamp": "2026-09-05T18:25:11.164584+00:00",
+      "request": "(default periods)",
+      "dataset": "expenses",
+      "period_a": "2025-10",
+      "period_b": "2025-11",
+      "key_variances": [
+        {
+          "account": "acct_1",
+          "abs_change": -879.0,
+          "pct_change": -0.5317604355716878,
+          "top_category": "Loan given",
+          "final_explanation": "**acct_1 changed by \u221253.2% (\u2212879 BYN), driven by \"Loan given\" dropping \u2212969 BYN (992 \u2192 23), with 1 contributor (tag_1) accounting for 100% of that change \u2014 mainly the non-recurrence of October's single 854 BYN loan.** A new 299 BYN \"Clothes\" charge (also tag_1) partially offset the decline."
+        },
+        {
+          "account": "acct_3",
+          "abs_change": -166.0,
+          "pct_change": -0.6613545816733067,
+          "top_category": "Gifts",
+          "final_explanation": "acct_3 fell 66.1% (251 \u2192 85 BYN) on a broad-based pullback led by Gifts (-60 BYN, to zero \u2014 three one-off purchases of 30/15/15 BYN in October simply didn't recur) and Cafe (-56 BYN, -60.2%, the statistically unusual mover by zscore, with November reduced to small 3-8 BYN tickets). Both categories are 100% concentrated in tag_1 with no offsetting contributors, as is all of this account's spend."
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-05T18:25:35.206898+00:00",
+      "request": "(default periods)",
+      "dataset": "income",
+      "period_a": "2025-10",
+      "period_b": "2025-11",
+      "key_variances": [
+        {
+          "account": "acct_1",
+          "abs_change": -1676.0,
+          "pct_change": -0.563740329633367,
+          "top_category": "Debt return / Borrowed money",
+          "final_explanation": "acct_1 income fell 56.4% (-1676 BYN), driven mainly by Debt return / Borrowed money dropping -1321 BYN (-96.4%), a single tag_5 contributor accounting for 100% of that change with no offsetting contributors \u2014 essentially the absence of October's one-off 1345 BYN repayment, replaced by just 49 BYN in November. A secondary drag was Second work (-284 BYN, 100% from tag `2th_work`), partly offset by Job (+119 BYN); note the debt category's materiality rests on robust_ratio with only 5 periods of history, so it's large but not statistically confirmed as unusual."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "timestamp": "2026-09-05T18:24:44.184928+00:00",
+      "scope": "category",
+      "key": "Loan given",
+      "dataset": "expenses",
+      "note": "In acct_1, \"Loan given\" is 100% tag_1 and is lumpy/episodic rather than recurring: monthly totals are dominated by occasional single large disbursements (e.g. one 854 BYN transaction in 2025-10 out of 992 BYN total). Month-over-month swings in this category should be read as timing of one-off loans, not a change in run-rate spending."
+    },
+    {
+      "timestamp": "2026-09-05T18:25:07.106487+00:00",
+      "scope": "account",
+      "key": "acct_3",
+      "dataset": "expenses",
+      "note": "acct_3 spending is entirely tagged tag_1 across all categories (Gifts, Cafe, Leisure, Food), so it behaves like a single-owner personal account \u2014 tag-level concentration analysis will always return 100% on tag_1 and adds no discriminating power. Use category- or transaction-level drilldowns instead. Gifts is episodic/lumpy (one-off 15-30 BYN purchases, zero in some months, only 4 periods of history so moves score via robust_ratio), while Cafe is a recurring small-ticket stream (3-8 BYN transactions) with enough history for zscore."
+    },
+    {
+      "timestamp": "2026-09-05T18:25:30.776177+00:00",
+      "scope": "category",
+      "key": "Debt return / Borrowed money",
+      "dataset": "income",
+      "note": "In acct_1, this category is entirely tag_5 and is lumpy/non-recurring: it consists of occasional large one-off repayments (e.g. a single 1345.00 BYN item on 2025-10-20) on top of small ~25-50 BYN items. Month-over-month swings here are driven by presence/absence of a single large transaction rather than a run-rate change, and it has thin history (n=5, materiality flagged via robust_ratio not zscore). Treat spikes in this category as timing noise unless a large item recurs."
+    }
+  ]
 }
