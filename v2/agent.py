@@ -23,6 +23,7 @@ on your Desktop (~/Desktop) instead -- searching it and its subfolders.
 
 import argparse
 import os
+import shutil
 import sys
 from datetime import datetime, timezone
 from typing import Optional
@@ -67,6 +68,34 @@ def find_default_data_file(filename: str = DEFAULT_DATA_FILENAME, search_dir: st
         f"Could not find '{filename}' on your Desktop ({search_dir}) or in any of its "
         f"subfolders. Either place the file there, or pass its location explicitly with --data."
     )
+
+
+def resolve_period_by_index(all_periods: list[str], index: int) -> str:
+    """Resolve a 1-indexed position (as typed by the user -- e.g. 1 for the
+    first period available, 11 for the eleventh) to the actual "YYYY-MM"
+    period string. Raises a clear ValueError if out of range."""
+    if index < 1 or index > len(all_periods):
+        raise ValueError(
+            f"Period index {index} is out of range -- this data has {len(all_periods)} "
+            f"period(s), numbered 1 to {len(all_periods)} ({all_periods[0]} .. {all_periods[-1]})."
+        )
+    return all_periods[index - 1]
+
+
+def copy_report_to_desktop(report_path: str, desktop_dir: str = DESKTOP_DIR) -> Optional[str]:
+    """Copy the generated report to the Desktop too, for easy access alongside
+    the project's own reports/ folder. Returns the copied path, or None if the
+    Desktop isn't writable (this never fails the run -- the report already
+    exists safely under reports/ regardless)."""
+    try:
+        os.makedirs(desktop_dir, exist_ok=True)
+        dest = os.path.join(desktop_dir, os.path.basename(report_path))
+        shutil.copy2(report_path, dest)
+        return dest
+    except OSError as e:
+        print(f"Warning: could not copy report to Desktop ({e}). It's still saved at {report_path}.")
+        return None
+
 
 SYSTEM_PROMPT_TEMPLATE = """You are a financial analyst agent. You have been asked to explain \
 why the '{account}' account in the '{dataset}' dataset changed between {period_a} and {period_b}. \
@@ -176,7 +205,8 @@ def _build_drilldown(df, dataset: str, account: str, period_a: str, period_b: st
     }
 
 
-def run(csv_path: Optional[str], dataset_arg: str, period_a: Optional[str], period_b: Optional[str], note: str) -> None:
+def run(csv_path: Optional[str], dataset_arg: str, period_a: Optional[str], period_b: Optional[str],
+        period_start: Optional[int], period_end: Optional[int], note: str) -> None:
     if csv_path is None:
         csv_path = find_default_data_file()
         print(f"--data not given -- using '{csv_path}' found on your Desktop.")
@@ -190,7 +220,18 @@ def run(csv_path: Optional[str], dataset_arg: str, period_a: Optional[str], peri
     if len(all_periods) < 2:
         print("Not enough periods in the data to compare.")
         return
-    if period_a is None or period_b is None:
+
+    indexed = "  ".join(f"{i + 1}:{p}" for i, p in enumerate(all_periods))
+    print(f"Available periods: {indexed}")
+
+    if period_start is not None or period_end is not None:
+        if period_start is None or period_end is None:
+            raise ValueError("Both --period-start and --period-end must be given together.")
+        period_a = resolve_period_by_index(all_periods, period_start)
+        period_b = resolve_period_by_index(all_periods, period_end)
+        print(f"Using period range {period_start}..{period_end} -> comparing {period_a} vs {period_b} "
+              f"(all periods in between count as history for materiality scoring).")
+    elif period_a is None or period_b is None:
         period_a, period_b = all_periods[-2], all_periods[-1]
 
     datasets = ["expenses", "income"] if dataset_arg == "both" else [dataset_arg]
@@ -246,6 +287,10 @@ def run(csv_path: Optional[str], dataset_arg: str, period_a: Optional[str], peri
     out_path = build_excel_report(all_rows, all_drilldowns, period_a, period_b, dataset_arg, out_dir=REPORTS_DIR)
     print(f"\nReport written to {out_path}")
 
+    desktop_copy_path = copy_report_to_desktop(out_path)
+    if desktop_copy_path:
+        print(f"Also copied to {desktop_copy_path}")
+
 
 def _parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Financial variance analysis agent.")
@@ -257,10 +302,21 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--dataset", choices=["expenses", "income", "both"], default="both")
     parser.add_argument("--period-a", dest="period_a", default=None, help="Baseline period, YYYY-MM.")
     parser.add_argument("--period-b", dest="period_b", default=None, help="Comparison period, YYYY-MM.")
+    parser.add_argument(
+        "--period-start", dest="period_start", type=int, default=None,
+        help="Baseline period as a 1-indexed position instead of YYYY-MM (e.g. 1 for the "
+             "earliest period available). Use together with --period-end.",
+    )
+    parser.add_argument(
+        "--period-end", dest="period_end", type=int, default=None,
+        help="Comparison period as a 1-indexed position instead of YYYY-MM (e.g. 11 for "
+             "the eleventh period available). Use together with --period-start.",
+    )
     parser.add_argument("note", nargs="*", help="Optional free-text note to steer narrative emphasis.")
     return parser.parse_args(argv)
 
 
 if __name__ == "__main__":
     args = _parse_args(sys.argv[1:])
-    run(args.data, args.dataset, args.period_a, args.period_b, " ".join(args.note))
+    run(args.data, args.dataset, args.period_a, args.period_b,
+        args.period_start, args.period_end, " ".join(args.note))
